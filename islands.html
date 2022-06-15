@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/island.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+</style>
+
+</head>
+    <body>
+        <div class="conpage2" >
+            <div class="topnav">
+               <img src="imge/m.png"style="height: 70px; ">
+                <a href="home.html">Home</a>
+                <a href="africa.html">Africa</a>
+                <a href="asia.html">Asia</a>
+                <a href="europe.html">Europe</a>
+                <a href="amrica.html">America</a>
+                <a href="middle.html">Middle East</a>
+                <a  class="active" href="#Islands">Islands</a>
+                <a href="news.html">News</a>
+                <a href="instruc.html">insructions</a>
+                <a   href="about.html">About us</a>
+                <button onclick="myFunction()">dark mode</button>
+              </div>
+              <div class="conpage2"></div>
+              <p class="tittle">Islands in The World</p>
+              <p>Some beautiful islands around the world:</p>
+              
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="imge/47-150038-tourism-honeymoon-maldives-6.jpeg" style="width:80%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="imge/bora-bora-3023437_1920.jpg" style="width:80%">
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="imge/veligandu-island-1044366_1920.jpg" style="width:80%">
+  </div>
+  
+  </div>
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  <script>
+
+
+                function myFunction() {
+                   var element = document.body;
+                   element.classList.toggle("dark-mode");
+                }
+              
+
+   
+
+
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+                  <div class="conpage2"></div>
+
+  
+              <h2><img src ="imge/47-150038-tourism-honeymoon-maldives-6.jpeg" alt="Trulli" width="500" height="333">
+               <img  class=" two" src="imge/maldiivv-(29).gif"alt="Trulli" width="500" height="333" style="float: right;" > </h1>
+               <p class="spe">The Maldives is, of course, the most beautiful island in the world, as it has charming areas on the Indian Ocean, and consists of 1000 coral islands, and has a very exceptional beauty that can never be expressed in words, it is one of the amazing places that everyone can visit, the Maldives is home to 70 species Various of coral reefs and wonderful marine life. Also, water sports there have a different taste than anywhere else, from diving to riding glass boats under the water to walking under the water, and there is also a water plane. In the evening, the sunset dazzles.
+
+              </p>
+              <h3><img class="one" src="imge/bora-bora-3023437_1920.jpg"alt="Trulli" width="500" height="333"> </h2>
+              <p class="spo">Bora Bora is a volcanic island that is part of the French Polynesia group of islands in the South Pacific Ocean. It is considered the main island and its area reaches 10 km and is surrounded by many wonderful small islands as well. These islands include Motu Tabu Island, Motu Tin Island, Sofitel Motu Island, and others.</p>
+
+              </p>
+              <p class="spo">And the permanent population of the island is about 9000 people. An airport is found on the island in order to facilitate access to it. The island also provides chalets and villas overlooking the sea directly, in addition to that it provides many different activities such as snorkeling, diving, windsurfing, water skiing and windsurfing as well, as you can enjoy the mountains there and long walks on these mountains.
+              </p>
+              <h4><img  class ="n" src = "imge/santorini-greece.jpg" alt=Trulli width="500" height="333"> </h3>
+              <p class ="spo">The island of Santorini is one of the most beautiful and beautiful islands located on the Mediterranean Sea, until it was called (Greek Hymns from the Land of the Lost World), considering it a poetic icon of the intensity of its magnificence and beauty, which poets have sung in their poems from the era of Plato to the present day.
+
+              </p>
+              <p class="spn">The island is located to the south of the Aegean Sea in southeastern Greece, specifically in the Cyclades archipelago, where it stands on a series of very high rocks that protect it from the sea waves. Santorini is the first destination for tourists around the world because of its enchanting scenery and breathtaking beauty, as it is a mixture of blue waters, steep cliffs and white wastes.</p>
+              <p class="spn">The best time to visit the island is spring, for the wonderful scene that is characterized by the opening of wild flowers in the area and the start of the heat in its waters rising, and the island is very crowded with visitors during the summer period, so many of them prefer to visit it in the fall season when the congestion decreases.
+
+              </p>
+              <h5><img class="m" src= "imge/1491580777201-1100.jpg" alt=Trulli width="500" height="333"> </h4>
+              <p class ="no">Ko Phi is considered one of the most beautiful natural islands in all of Thailand, as this beautiful island is characterized by limestone mountains with an incomparable set of cliffs, caves and stunning white sandy beaches, although it is often referred to as one island, (Ku In Phi), but it is in fact a small archipelago made up of several beautiful islands that allow visitors to enjoy the most beautiful nature scenes in the world away from the hustle and bustle of life in big cities.
+
+
+
+              </p>
+              <p class="no">
+                Ko Phi Phi Don is the largest inhabited island among the islands, and you won't believe the amount of development this scenic place, restaurants and shopping have been through.
+              </p>
+              <p class="spo">As Ko Phi Phi Leh, a smaller island in the south, is inhabited only by birds and marine life and wonderful, expect to see a lot of tourists here during daylight hours, especially in the Maya Bay, also known as "the beach".</p>
+              <div >
+                <video class ="to" width="50%" controls>
+                  <source src="imge/Top 10 Most Beautiful Islands in the World You Must Visit(360P).mp4"
+                </video>
+              </div>
+              <p class="mo">Islands conjure dreams of paradise: an escape from the rat race and a perfect patch of sand where you can relax under rustling palms and gaze at a serene blue sea.
+
+              </p>
+              <p class="mo">But not all islands are created the same. The beauty of some is defined more by the sea that surrounds them, which can captivate connoisseurs with its crystalline clarity and thriving coral kingdoms.
+
+              </p>
+              <p class="mo" >Other islands feature luxuriant jungles and velvety peaks, and some enchant travelers with their cultural jewels. Whether it's sublime beaches, stunning topography, or exotic cultures you seek, these islands lie far from the workaday clamor but close to creature comforts.
+
+              </p>
+              <div class="footer" style="background-color:#2b9ce7; text-align: center;">
+                <span>copyright &copy; 2021 traveler Inc.</span>
+                <ul style="list-style: none;">
+                  <li style="display: inline-block;"> 
+                    <img src="imge/WhatsApp Image 2021-05-30 at 6.53.43 AM.jpeg" style="width: 32px;height: 32px;">
+                  </li>
+                  <li style="display: inline-block;" >
+                    <img src="imge/WhatsApp Image 2021-05-30 at 6.53.08 AM.jpeg"style="width: 32px;height: 32px;">
+                  </li>
+                  <li style="display: inline-block;">
+                    <img src="imge/WhatsApp Image 2021-05-30 at 6.53.43 AM (1).jpeg"style="width: 32px;height: 32px;">
+                  </li>
+                  <li style="display: inline-block;">
+                    <img src="imge/WhatsApp Image 2021-05-30 at 6.53.43 AM (2).jpeg"style="width: 32px;height: 32px;">
+                  </li>
+                  
+                </ul>
+              </div>
+
+        

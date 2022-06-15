@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+/*dark mood*/
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    
+  }
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  
+  .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      height: 300px; 
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+/*flip card*/
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+  </style>
+
+</head>
+<!--navbar-->
+<body style="font-family:'Changa', sans-serif;">
+  <div class="conpage" style="height:1500px;">
+    <div class="logo">
+      <img src="imge/m.png"style="height: 200px; ">
+    </div>
+      <div class="topnav">
+          <a class="active" href="#home">Home</a>
+          <a href="africa.html">Africa</a>
+          <a href="asia.html">Asia</a>
+          <a href="europe.html">Europe</a>
+          <a href="amrica.html">America</a>
+          <a href="middle.html">Middle East</a>
+          <a href="islands.html">Islands</a>
+          <a href="news.html">News</a>
+          <a href="instruc.html">insructions</a>
+          <a href="about.html">About us</a>
+          
+          <!--dark mood-->
+          <button onclick="myFunction()">dark mode</button>
+
+
+        </div>
+
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="imge/india.png" style="width:100%;height: 500px;">
+  <img class="mySlides" src="imge/span.png" style="width:100%;height: 500px;">
+  <img class="mySlides" src="imge/amirca.png" style="width:100%;height: 500px;">
+  <img class="mySlides" src="imge/italy.png" style="width:100%;height: 500px;">
+  <img class="mySlides" src="imge/roma.png" style="width:100%;height: 500px;">
+  <img class="mySlides" src="imge/egy.png" style="width:100%;height: 500px;">
+</section>
+
+<!--some words-->
+
+<h1 style="color: #2b9ce7; text-align: center;">Travel with us</h1>
+<div style="text-align: center;">
+
+<h3>we found a number of countries and places known in the world to be among the most beautiful places that people can go to in the event of tourism and travel.</h3>
+     <h3>these countries include Italy, Spain, London, Paris, Malaysia, Kuala Lumpur, Hong Kong, Singapore, New York, Thailand, Dubai, Istanbul and Bangkok.
+      Among the places most frequented by tourists are Disneyland in California, Times Square in New York, Niagara Falls in Canada, the Great Wall of China and the Pyramids of Giza in Egypt, the Golden Gate Bridge in San Francisco and the Taj Mahal in India.</p>
+     </h3> 
+
+</div>
+
+
+<!--flip cards-->
+
+<div class="row">
+  <div class="column">
+
+<div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imge/turcky.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="middle.html" style=" text-decoration-line: none;">See the most amazing places in the Middle East</a>
+    <p>That enormous piece of territory often overlooked as a whole and, usually, only seen as the land of the greatest and most beautiful deserts, endless bazaars of spices and the warm welcome of the Bedouins.</p>
+      
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="flip-card">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imge/island.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="islands.html" style=" text-decoration-line: none;">See the most amazing island</a>
+    <p>Mauritius has, for example, begun to offer activities like scuba diving, parasailing, water-skiing, deep sea fishing and catamaran sailing.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="column">
+  <div class="flip-card">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="imge/london.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <a href="europe.html" style=" text-decoration-line: none;">See the most amazing places Europe</a>
+        <p>In fact, European countries are consistently among the top tourist destinations of the world; they draw visitors from within Europe as well as from other continents.</p>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  
+  
+</div>
+
+  <div class="column" style="width: 220px;">
+    <div class="flip-card">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="imge/africaa.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <a href="africa.html" style=" text-decoration-line: none;">See the most amazing places in Africa</a>
+          <p>Despite the chest-thumping, Africa’s share of global tourist arrivals is relatively small. There were 980 million international tourist arrivals in 2011, of which only 50 million traveled to Africa.</p>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    
+    
+    </div>
+
+
+</div>
+
+
+<br>
+
+<div class="row">
+  <div class="column">
+
+<div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imge/aciaa.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="asia.html" style=" text-decoration-line: none;">See the most amazing places in Asia</a>
+      <p>Asia includes diverse countries with both modern and traditional values. Asia gets more tourists from all around the world to explore its rich tradition. The following tourist information of Asia provides you all the necessary details, which are required to take this glorious trip</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="column">
+<div class="flip-card">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imge/travel.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <a href="islands.html" style=" text-decoration-line: none;">See the most amazing islands</a>
+      <p>Mauritius has, for example, begun to offer activities like scuba diving, parasailing, water-skiing, deep sea fishing and catamaran sailing.</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="column">
+  <div class="flip-card">
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="imge/ame.png" alt="Avatar" style="width:300px;height:300px;">
+      </div>
+      <div class="flip-card-back">
+        <a href="amrica.html" style=" text-decoration-line: none;">See the most amazing places in amirca</a>
+        <p>The US is home to some of the most spectacular scenery in the world and some of the most recognizable icons on the planet. Many of the top attractions in the United States are bucket list destinations, drawing visitors from around the world.</p>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  
+  
+</div>
+
+  <div class="column" style="width: 220px;">
+    <div class="flip-card">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="imge/intro.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <a href="instruc.html" style=" text-decoration-line: none;">See the most important insructions for traveling</a>
+          <p>Wearing a mask over your nose and mouth is required on planes, buses, trains, and other forms of public transportation traveling into, within, or out of the United States and in U.S. transportation hubs such as airports and stations.</p>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    
+    
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+<br>
+
+
+    <br>
+
+
+    <div class="row">
+      <div class="column" style="float: right; width: 500px;" >
+    
+    <div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="imge/tra.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <a href="news.html" style=" text-decoration-line: none;">See the most imrortant news/a>
+          <p style="color: white;">London's Heathrow Airport has opened a new terminal for travellers visiting from its Red List countries, including India. Those coming to London via direct flights from COVID-19 high risk destinations will now directly go through Terminal 3  see more...</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+   
+    <div class="column" style="float: right; width: 500px;">
+      
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="imge/aboout.png" alt="Avatar" style="width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <a href="about.html" style=" text-decoration-line: none;">See some informations about us</a>
+          <p>We are a group of students from the faculty of Computers and Artificial Intelligence
+            we created this website to help learn about the beauty of the world know more about us...</p>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    
+    
+    </div>
+    
+
+
+<br>
+<!--foooter-->
+
+<div class="footer" style="background-color:#2b9ce7; text-align: center; height: 100px;">
+  <span>copyright &copy; 2021 traveler Inc.</span>
+  <ul style="list-style: none;">
+    <li style="display: inline-block;"> 
+      <img  src="imge/iconfinder_38-instagram_1161954.png" style="width: 32px;height: 32px;">
+    </li>
+    <li style="display: inline-block;" >
+      <img  src="imge/iconfinder_45-twitter_104459.png"style="width: 32px;height: 32px;">
+    </li>
+    <li style="display: inline-block;">
+      <img   src="imge/iconfinder_Facebook_social_media_logo_1964400.png"style="width: 32px;height: 32px;">
+    </li>
+    <li style="display: inline-block;">
+      <img   src="imge/iconfinder_Rounded_Linkedin2_svg_5282542.png"style="width: 32px;height: 32px;">
+    </li>
+    
+  </ul>
+  </div>
+
+</div>
+
+
+
+
+ 
+
+ 
+
+
+
+
+<script>
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+  </script>
+
+  
+</body>
+</html>
+
